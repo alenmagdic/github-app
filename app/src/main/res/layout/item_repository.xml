@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:ignore="UnusedAttribute">
+
+    <ImageView
+            android:id="@+id/image_owner_thumbnail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/text_forks"
+            tools:src="@drawable/image_github_logo"
+            android:contentDescription="@string/content_description_repository_owner_thumbnail"
+    />
+
+    <TextView
+            android:id="@+id/text_owner_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/image_owner_thumbnail"
+            app:layout_constraintTop_toBottomOf="@id/image_owner_thumbnail"
+            tools:text="Owner name"
+    />
+
+    <TextView
+            android:id="@+id/text_repository_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/image_owner_thumbnail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/image_owner_thumbnail"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="20dp"
+            tools:text="Sample repository"
+    />
+
+    <TextView
+            android:id="@+id/text_watchers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_repository_name"
+            app:layout_constraintTop_toBottomOf="@id/text_repository_name"
+            android:text="@string/label_watchers"
+    />
+
+    <TextView
+            android:id="@+id/text_watchers_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_watchers"
+            app:layout_constraintTop_toTopOf="@id/text_watchers"
+            android:layout_marginStart="5dp"
+            tools:text="555"
+    />
+
+    <TextView
+            android:id="@+id/text_issues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_watchers"
+            app:layout_constraintTop_toBottomOf="@id/text_watchers"
+            android:text="@string/label_issues"
+    />
+
+    <TextView
+            android:id="@+id/text_issues_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_issues"
+            app:layout_constraintTop_toTopOf="@id/text_issues"
+            android:layout_marginStart="5dp"
+            tools:text="12"
+    />
+
+    <TextView
+            android:id="@+id/text_forks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_issues"
+            app:layout_constraintTop_toBottomOf="@id/text_issues"
+            android:text="@string/label_forks"
+    />
+
+    <TextView
+            android:id="@+id/text_forks_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_forks"
+            app:layout_constraintTop_toTopOf="@id/text_forks"
+            android:layout_marginStart="5dp"
+            tools:text="5"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

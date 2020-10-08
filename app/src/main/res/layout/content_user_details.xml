@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/label_name"
+    />
+
+    <TextView
+            android:id="@+id/text_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_name"
+            app:layout_constraintTop_toTopOf="@id/text_name"
+            android:layout_marginStart="5dp"
+            tools:text="John Jones"
+    />
+
+    <TextView
+            android:id="@+id/text_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_name"
+            app:layout_constraintTop_toBottomOf="@id/text_name"
+            android:text="@string/label_company"
+    />
+
+    <TextView
+            android:id="@+id/text_company_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_company"
+            app:layout_constraintTop_toTopOf="@id/text_company"
+            android:layout_marginStart="5dp"
+            tools:text="The company"
+    />
+
+    <TextView
+            android:id="@+id/text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_name"
+            app:layout_constraintTop_toBottomOf="@id/text_company"
+            android:text="@string/label_location"
+    />
+
+    <TextView
+            android:id="@+id/text_location_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_location"
+            app:layout_constraintTop_toTopOf="@id/text_location"
+            android:layout_marginStart="5dp"
+            tools:text="Croatia"
+    />
+
+    <TextView
+            android:id="@+id/text_public_repos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_name"
+            app:layout_constraintTop_toBottomOf="@id/text_location"
+            android:text="@string/label_public_repos"
+    />
+
+    <TextView
+            android:id="@+id/text_public_repos_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_public_repos"
+            app:layout_constraintTop_toTopOf="@id/text_public_repos"
+            android:layout_marginStart="5dp"
+            tools:text="34"
+    />
+
+    <TextView
+            android:id="@+id/text_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_name"
+            app:layout_constraintTop_toBottomOf="@id/text_public_repos"
+            android:text="@string/label_followers"
+    />
+
+    <TextView
+            android:id="@+id/text_followers_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_followers"
+            app:layout_constraintTop_toTopOf="@id/text_followers"
+            android:layout_marginStart="5dp"
+            tools:text="223"
+    />
+
+    <TextView
+            android:id="@+id/text_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_name"
+            app:layout_constraintTop_toBottomOf="@id/text_followers"
+            android:text="@string/label_following"
+    />
+
+    <TextView
+            android:id="@+id/text_following_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_following"
+            app:layout_constraintTop_toTopOf="@id/text_following"
+            android:layout_marginStart="5dp"
+            tools:text="143"
+    />
+
+    <TextView
+            android:id="@+id/text_date_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_name"
+            app:layout_constraintTop_toBottomOf="@id/text_following"
+            android:text="@string/label_date_created"
+    />
+
+    <TextView
+            android:id="@+id/text_date_created_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_date_created"
+            app:layout_constraintTop_toTopOf="@id/text_date_created"
+            android:layout_marginStart="5dp"
+            tools:text="25/05/2017"
+    />
+
+    <TextView
+            android:id="@+id/text_date_modified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_name"
+            app:layout_constraintTop_toBottomOf="@id/text_date_created"
+            android:text="@string/label_date_modified"
+    />
+
+    <TextView
+            android:id="@+id/text_date_modified_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_date_modified"
+            app:layout_constraintTop_toTopOf="@id/text_date_modified"
+            android:layout_marginStart="5dp"
+            tools:text="25/05/2017"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
